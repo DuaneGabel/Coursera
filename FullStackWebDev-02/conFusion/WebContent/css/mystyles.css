@@ -62,10 +62,6 @@ body {
 	color: #000000;
 }
 
-/* .checkbox {
-	color: white;
-} */
-
 .tab-content {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
@@ -78,7 +74,7 @@ body {
 }
 
 .carousel {
-	background:#1A237E;
+	background: #1A237E;
 }
 
 .carousel .item {
