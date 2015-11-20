@@ -112,7 +112,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a data-toggle="modal"
+						<a	id="loginPress"
 							data-target="#loginModal">
 							<span class="glyphicon glyphicon-log-in"></span> Login
 						</a>
@@ -326,7 +326,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-2">
 					<p style="padding: 40px;"></p>
-					<a	data-toggle="modal"
+					<a	id="reserveTableButton"
 						data-target="#reserveatableModal"
 						type="submit"
 						class="btn btn-warning btn-block">Reserve Table
@@ -515,9 +515,6 @@
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	
 	<script>
-/* 		$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip();
-		}); */
 		$(document).ready(function() {
 			$("#mycarousel").carousel( { interval: 2000} );
 			
@@ -527,6 +524,14 @@
 			
 			$("#carousel-play").click(function() {
 				$("#mycarousel").carousel('cycle');
+			});
+			
+			$("#loginPress").click(function() {
+				$("#loginModal").modal("toggle");
+			});
+			
+			$("#reserveTableButton").click(function() {
+				$("#reserveatableModal").modal("toggle");
 			});
 		});
 	</script>
