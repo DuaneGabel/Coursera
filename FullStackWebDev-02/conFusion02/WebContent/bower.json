@@ -1,0 +1,27 @@
+{
+  "name": "conFusion",
+  "authors": [
+    "DuaneGabel <duaneagabel@gmail.com>"
+  ],
+  "description": "Coursera website for Fullstack Web Dev",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "conFusion",
+    "Fusion",
+    "Restaurant"
+  ],
+  "license": "MIT",
+  "homepage": "y",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  }
+}
