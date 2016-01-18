@@ -23,10 +23,15 @@
     <![endif]-->
     
     <style type="text/css">
-        .custComments {
-            margin-bottom: 0px;
+        #custComments {
+            height: 30px;
+            /*margin-top: 4px;*/
+            vertical-align: middle;
+            font-size: 17px;
+            font-weight: bold;
         }
     </style>
+    
 </head>
 
 <body>
@@ -53,20 +58,21 @@
                 </div>
             </div>
             <div class="col-xs-9 col-xs-offset-1">
-                
                 <div class="comment-list">
-                    <div class="col-xs-12 col-sm-5">
-                        <h4>Customer Comments</h4>
+                    <div class="col-xs-12 col-sm-3">
+                        <p id="custComments">Customer Comments</h5>
+                        </form>
                     </div>
-                    <div class="custComments col-xs-12 col-sm-7">
+                    <div class="col-xs-12 col-sm-9">
                         <form class="form-inline">
                             <label>Sort by: </label>
                             <input  type="text"
-                                    class="form-control input-sm">
+                                    class="form-control input-sm"
+                                     ng-model="sorter">
                         </form>
                     </div>
                     <div class="col-xs-12"
-                        ng-repeat="comment in dishCtrl.dish.comments">
+                        ng-repeat="comment in dishCtrl.dish.comments | orderBy:sorter">
                         <blockquote>
                             {{comment.rating}}<span> Stars</span>
                             <p>{{comment.comment}}</p>
